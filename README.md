@@ -23,45 +23,54 @@ $ git clone https://github.com/mostafaALBASH/tradeling-coding-react.git
 $ cd tradeling-coding-react
 $ npm install
 $ npm start
+$ npm run test:watch
 ```
 
 ## Areas of Development
 
 ```text
 .
-   package.json
-   tsconfig.json
-   
-/public
-       favicon.ico
-       index.html
-       logo192.png
-       logo512.png
-       manifest.json
-       robots.txt
-       
-/src
-       index.css
-       index.tsx
-       react-app-env.d.ts
-       setupTests.ts
-       
-    /components
-       /App
-              App.css
-              App.test.tsx
-              App.tsx
-              
-       /Result
-              index.ts
-              Result.scss
-              Result.tsx
-              
-       /Search
-               index.ts
-               Search.css
-               Search.tsx
-    /redux
+:.
+|   jest.config.js
+|   package.json
+|   README.md
+|   tree
+|   tsconfig.json
+|   
+public
+|       favicon.ico
+|       index.html
+|       logo192.png
+|       logo512.png
+|       manifest.json
+|       robots.txt
+|       
+src
+    |   globals.d.ts
+    |   index.css
+    |   index.tsx
+    |   react-app-env.d.ts
+    |   setupTests.ts
+    |   
+    components
+    |   App
+    |   |       App.css
+    |   |       App.tsx
+    |   |       
+    |   Result
+    |   |       index.ts
+    |   |       Result.scss
+    |   |       Result.tsx
+    |   |       
+    |   Search
+    |   |       index.ts
+    |   |       Search.css
+    |   |       Search.tsx
+    |   |       
+    |   __test__
+    |           Search.test.tsx
+    |           
+    redux
             actions.ts
             models.ts
             store.ts
@@ -71,6 +80,7 @@ $ npm start
 
 
 in the root of project you can find `jest.config.js` adding `"test:watch": "jest --watchAll"` in `tsconfig.json` has the esModuleInterop flag enabled for compatibility with Jest 
+
 Under the `src` folder you will find the `index.tsx` where App wrapped with `react-redux` and `react-router`.
 Under the `redux` folder you will find the `store.ts` where `redux-persist, persistReducer` configured.
 
