@@ -1,0 +1,24 @@
+
+<div className="item" key={`item_${item.id}`}>
+<a href="#">
+<img
+src={item.avatar_url}
+alt="Project Image"
+className="projectImg"
+></img>
+</a>
+<h4 className="cardTitle">{item.name}</h4>
+<p className="itemInfo">{item.full_name}</p>
+<div className="btns">
+<a href={item.clone_url} className="btn glyphicon glyphicon-pencil">
+<i className=""></i> Repository
+</div>
+</div>
+
+
+
+ <p>{item.clone_url}</p>
+                    <p>{item.stargazers_count}</p>
+                    <p>{item.forks}</p>
+                    <p>{item.open_issues}</p>
+                    <p>{item.watchers}</p>

@@ -1,0 +1,60 @@
+body {
+  padding: 30px 150px;
+  max-width: 960px;
+  margin: auto;
+}
+
+input {
+  padding: 10px 20px;
+  max-width: 520px;
+  min-width: 400px;
+  height: 36px;
+  font-size: 20px;
+}
+
+select {
+  padding: 10px 20px;
+  margin-left: 11px;
+  margin-top: 3px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.search-span {
+  left: 57px;
+  position: relative;
+  font-size: 20px;
+  color: #909090;
+}
+
+.logo {
+  position: relative;
+  top: 23px;
+  height: 54px;
+}
+
+option {
+  font-size: 20px;
+}
+
+.center-div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 150px;
+  border-radius: 3px;
+}
+
+.brand-title {
+  font-size: 24px;
+}
+.top-section {
+  margin-bottom: 18px;
+}
+.App {
+  margin-bottom: 10px;
+}

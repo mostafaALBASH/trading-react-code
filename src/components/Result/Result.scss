@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300');
+
+$primaryClr: #222222;
+$secondaryClr: #3a85c9;
+$primaryFnt: #fff;
+
+@mixin ease {
+  transition: all 0.5s ease-out;
+}
+
+* {
+  font-family: Hind, sans-serif;
+}
+
+.cards {
+  max-width: 600px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-gap: 1rem;
+
+  .item {
+    border: 1px solid $primaryClr;
+    //   padding: 2rem;
+    padding: 10px;
+
+    .cardTitle {
+      text-align: center;
+      font-size: 1.4em;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primaryFnt;
+    }
+    .itemInfo {
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    .itemInfoAlign {
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid $primaryClr;
+    margin-bottom: 0.5rem;
+    height: 120px;
+    object-fit: cover;
+
+    &:hover {
+      opacity: 0.5;
+      @include ease;
+    }
+  }
+}
+.btns {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: repeat(1, 1fr);
+
+  .btn {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.1rem;
+    background: darken($primaryClr, 10);
+    border: 0;
+
+    &:hover {
+      background: $secondaryClr;
+      color: $primaryFnt;
+      @include ease;
+    }
+  }
+  i {
+    float: left;
+  }
+}
