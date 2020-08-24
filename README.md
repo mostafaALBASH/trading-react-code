@@ -69,8 +69,11 @@ $ npm start
             types.ts
 ```
 
+
+in the root of project you can find `jest.config.js` adding `"test:watch": "jest --watchAll"` in `tsconfig.json` has the esModuleInterop flag enabled for compatibility with Jest 
 Under the `src` folder you will find the `index.tsx` where App wrapped with `react-redux` and `react-router`.
 Under the `redux` folder you will find the `store.ts` where `redux-persist, persistReducer` configured.
+
 
 ## App URL on Heroku
 
